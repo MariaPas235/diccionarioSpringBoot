@@ -100,6 +100,7 @@ public class PalabraController {
         return new ResponseEntity<>(palabras, new HttpHeaders(), HttpStatus.OK);
     }
 
+
     @CrossOrigin
     @GetMapping("/inicial/{letra}")
     public ResponseEntity<List<Palabra>> getPalabrasByInicial(@PathVariable String letra) {
