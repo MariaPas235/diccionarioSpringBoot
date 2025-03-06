@@ -20,7 +20,7 @@ public class DefinicionService {
 
     public List<Definicion> getDefinicionesByIdPalabra(int idPalabra){
         return definicionRepository.getDefinicionesByIdPalabra(idPalabra);
-    }
+}
 
     public void deleteDefinicion(int id) throws RecordNotFoundException {
         Optional<Definicion> definicionOptional = definicionRepository.findById(id);
